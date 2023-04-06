@@ -19,7 +19,7 @@ Steps to run the application:
 Program flow:
 1. main.py reads the image given in the img_path.
 2. The detect_text from text_detection.py will be called. detect_text will extract the text from the image.
-3. detext_text calls state_name and license_number from state_license_function.py to extract the state name and license number from the detected text.
+3. detect_text calls state_name and license_number from state_license_function.py to extract the state name and license number from the detected text.
 4. The state name and license number will be returned by text_detection.py.
 5. The main.py then calls convert_to_json.py to convert the output string into a JSON file and store it in the local machine.
 6. The main.py calls storage.py which helps upload the JSON file to cloud storage.
@@ -31,4 +31,4 @@ GCP Flow:
 4. Cloud function is triggered and the contents (state name and license) of the new_data.json and existing_data.json are checked.
 5. If there is a match, the string object "JSON objects match!" will be printed on the logs console.
 6. A metric is set up to check for the string object "JSON objects match!". Upon matching, an alert policy is triggered.
-7. The alert policy uses notification channels to deliver the alert message to recipients via email.
+7. The alert policy uses notification channel to deliver the alert message to recipients via email.
