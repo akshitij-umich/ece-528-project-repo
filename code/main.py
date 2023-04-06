@@ -11,6 +11,6 @@ def main():
 
 
 #Input image path
-img_pth = r"C:\Users\HP Pavilion\Desktop\Course Materials\Sem 2\Cloud Computing\Project\license_plate_images\7.jpg"
+img_pth = r"C:\Users\HP Pavilion\Desktop\Course Materials\Sem 2\Cloud Computing\Project\license_plate_images\1.jpg"
 #function call
 main()

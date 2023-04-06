@@ -41,7 +41,7 @@ def detect_text(path):
     # cv2.destroyAllWindows()
 
     #Save the image with bounding box around the detected text
-    # cv2.imwrite(r"C:\Users\HP Pavilion\Desktop\Course Materials\Sem 2\Cloud Computing\Project\output_images\5.png",img)
+    #cv2.imwrite(r"C:\Users\HP Pavilion\Desktop\Course Materials\Sem 2\Cloud Computing\Project\output_images\7.png",img)
 
     #Catch the exceptions, if any
     if response.error.message:
@@ -51,18 +51,3 @@ def detect_text(path):
                 response.error.message))
     
     return state_name,license_number
-    
-
-# #Input image path
-# img_pth = r"C:\Users\HP Pavilion\Desktop\Course Materials\Sem 2\Cloud Computing\Project\license_plate_images\7.jpg"
-# #function call
-# output = detect_text(img_pth)
-
-
-# data = {'state': output[0], 'license': output[1]}
-
-# # Convert dictionary to JSON string
-# json_data = json.dumps(data)
-# print(json_data)
-# # with open('output.json', 'w') as f:
-# #     f.write(json_data)
